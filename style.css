@@ -1,0 +1,437 @@
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo left, nav right */
+    align-items: center;
+    padding: 10px 30px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo image */
+.navbar .logo img {
+    height: 50px;   /* Logo height - adjust as needed */
+    width: auto;    /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+/* Navigation menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation links */
+.navbar nav ul li a {
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.navbar nav ul li a:hover {
+    color: #ffd700; /* golden highlight on hover */
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .navbar .logo img {
+        height: 40px; /* smaller on mobile */
+    }
+}
+/*hero section*/
+.hero{
+    height: 90vh;
+    background-image:
+    url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-text h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 10px 20px;
+    background: #66bb6a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #388e3c;
+}
+/*sections*/
+section{
+    padding: 60px 20px;
+    text-align: center;
+}
+.about{
+    background: #f4f4f4;
+    padding: 60px 20px;
+}
+.about-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.about-card{
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0,0,0,0,1);
+    transition: o.3s;
+}
+.about-card:hover{
+    transform: translateY(-5px);
+}
+.services{
+    background: #e8f5e9;
+    padding: 60px 20px;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+.service-card{
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgb(0,0,0,0,1);
+    text-align: center;
+    transition: 0.3s;
+}
+.service-card:hover{
+    background: white;
+    color: #333;
+    transform: translateY(-5px);
+}
+/*Footer*/
+footer{
+    background: #2e7d32;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+/* ===== ABOUT PAGE STYLES ===== */
+
+.about{
+    padding-top: 50px;
+    font-size: large;
+    font-style: normal;
+    background:rgba(219, 148, 89);
+} 
+
+  
+
+/* ===== Mission & Vision Styling ===== */
+
+.mission-vision {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #e6f0ff, #f9fbff);
+}
+
+.mission-vision h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+.mv-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mv-card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.mv-card h3 {
+    color: #00509e;
+    margin-bottom: 15px;
+}
+
+.mv-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Hover effect */
+.mv-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Colored top borders */
+.mission-card {
+    border-top: 5px solid #007bff;
+}
+
+.vision-card {
+    border-top: 5px solid #00a86b;
+}
+
+.departments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background:rgba(219, 148, 89);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(141, 131, 131, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.beliefs {
+    padding: 60px 20px;
+    background: #f9fbff;
+    text-align: center;
+}
+
+.beliefs h2 {
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.beliefs ol {
+    column-count: 2; /* split into 2 columns */
+    column-gap: 40px;
+    max-width: 900px;
+    margin: auto;
+    padding: 0;
+}
+
+.beliefs li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-left: 5px solid #00509e;
+    border-radius: 6px;
+    list-style-position: inside;
+    transition: 0.3s;
+}
+
+.beliefs li:hover {
+    background: #eef5ff;
+    transform: translateX(5px);
+}
+/* ===== Contact Page Styling ===== */
+
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+}
+
+.contact-section h1 {
+    color: rgba(219, 148, 89);
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    margin-bottom: 40px;
+}
+
+/* Layout */
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contact-info {
+    background: rgba(219, 148, 89);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: rgba(219, 148, 89);
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Button */
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: rgba(219, 148, 89);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: rgba(219, 148, 89);
+}
+
+/* Active nav link */
+.nav-links .active {
+    color: rgba(219, 148, 89);
+}
+/* ===== Hero Section ===== */
+.sermon-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(219, 148, 89);
+    
+}
+
+.sermon-hero h1 {
+    font-size: 34px;
+}
+
+/* ===== Social Section ===== */
+.social-sermons {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f7fb;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Cards */
+.social-card {
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.social-card iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.social-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover */
+.social-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Platform colors */
+.youtube { background: #ff0000; }
+.facebook { background: #1877f2; }
+.tiktok { background: #000000; }
+.instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf); }
+.telegram { background: #0088cc; }
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #226131;
+    color: white;
+    margin-top: 40px;
+}
